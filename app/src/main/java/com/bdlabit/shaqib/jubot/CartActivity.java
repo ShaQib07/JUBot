@@ -155,7 +155,7 @@ public class CartActivity extends AppCompatActivity implements RecyclerItemHelpe
     private void showSubmitted() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(CartActivity.this);
         alertDialog.setTitle("DONE!")
-                    .setMessage("ORDER SUBMITTED\nThanks for ordering")
+                    .setMessage("ORDER SUBMITTED\nTHANKS FOR ORDERING")
                     .setCancelable(false)
                     .setIcon(R.drawable.ic_done_black_24dp)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
