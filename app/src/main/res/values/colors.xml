@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="cyan">#99CCFF</color>
+    <color name="toolbar1">#4D6D79</color>
+    <color name="paste">#95D3B4</color>
+    <color name="light_green">#81CC86</color>
+    <color name="signup">#F69465</color>
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+    <color name="bgRowBackground">#FA315B</color>
+    <color name="deep_red">#BA1928</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

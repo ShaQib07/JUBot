@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">JUBot</string>
+    <string name="app">Application</string>
+    <string name="version">Version</string>
+    <string name="version_no">2.0</string>
+    <string name="version_code">12</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="author">Author</string>
+    <string name="author_name">Golam Shakib Khan</string>
+    <string name="company">Company</string>
+    <string name="company_name">BD Lab IT</string>
+    <string name="company_phone">01715662221</string>
+    <string name="address">Savar, Mofiz Plaza 5th floor</string>
+    <string name="address_behind">Behind Savar City Center</string>
+    <string name="share">Share with friends</string>
+    <string name="product_of">A Product of</string>
+    <string name="phone_hint">Phone No.</string>
+    <string name="pass_hint">Password</string>
+    <string name="new_pass_hint">New password</string>
+    <string name="confirm_pass_hint">Confirm password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_pass_text">You can ignore if you have not requested for this.</string>
+    <string name="otp">An OTP will be sent to your number for verification purpose.</string>
+    <string name="post_otp_header">Wait for the code we sent you...</string>
+    <string name="post_otp">we have sent you a code, it will be detected automatically but if it is not detected you can put it below manually as well</string>
+    <string name="otp_hint">Enter your 6 digit code</string>
+    <string name="ok_button">OK</string>
+    <string name="cont">Continue</string>
+    <string name="done">Done</string>
+    <string name="login_txt">Enter your phone no. to log in...</string>
+    <string name="login">Log In</string>
+    <string name="no_acc">Do not have an account?</string>
+    <string name="signup_here">Sign Up here</string>
+    <string name="signin">Sign Up</string>
+    <string name="no_internet">Please check your internet connection...</string>
+    <string name="title_activity_home">juBot</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="dept">Department</string>
+    <string name="batch">Batch</string>
+    <string name="hall">Hall/Address</string>
+    <string name="room">Room No.</string>
+    <string name="email">Email(optional)</string>
+    <string name="phone">Phone No.</string>
+    <string name="password">Password</string>
+    <string name="rice">ভাত</string>
+    <string name="veg">তরকারি</string>
+    <string name="vorta">ভর্তা</string>
+    <string name="others">অন্যান্য</string>
+    <string name="order">Place Order</string>
+    <string name="total">Total: </string>
+    <string name="service_charge">Service Charge: </string>
+    <string name="service_charge_excluded">(*Service charge excluded)</string>
+    <string name="zero">0tk</string>
+    <string name="five">5tk</string>
+    <string name="delete">Delete</string>
+    <string name="no_item">No item in cart!</string>
+    <string name="remove_cart">Touch on an item and swipe left to remove from cart.</string>
+    <string name="half_rice">Half Rice</string>
+    <string name="orders">Your placed orders will appear below...</string>
+    <string name="food_name">Name: </string>
+    <string name="food_price">Price: </string>
+    <string name="food_quantity">Quantity: </string>
+    <string name="comment">Add a comment...</string>
+    <string name="payment">
+        দুই ভাবে পেমেন্ট করতে পারবেন।\n
+        \tক) ক্যাশ অন ডেলিভারি\n
+        \tখ) বিকাশ-এর মাধ্যমে (সেন্ড মানির মাধ্যমে)\n
+        বিকাশ-এ পেমেন্টের ক্ষেত্রেঃ\n
+        \t১. আপনার মোবাইল থেকে *২৪৭# এ ডায়াল করুন।\n
+        \t২. অপশন ১ বাছাই করুন (সেন্ড মানি)।\n
+        \t৩. ০১৯২৭৯৬১৪৭৭ নাম্বারটি প্রদান করুন।\n
+        \t৪. নির্ধারিত এমাউন্ট প্রদান করুন।\n
+        \t৫. রেফারেন্সে আপনার মোবাইল নাম্বার(যে নাম্বার দিয়ে অর্ডার করেছেন),তা প্রদান করুন।\n
+        \t৬. আপনার পিন নাম্বার দিয়ে অর্ডার সম্পন্ন করুন।\n
+        \t৭. ভবিষ্যতে ব্যবহারের জন্য ফিরতি এসএমএসটি সংরক্ষণ করুন।</string>
+
+</resources>

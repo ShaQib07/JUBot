@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="7dp"
+    app:cardBackgroundColor="#FFFAE3"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/veg"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:paddingStart="20dp"
+            android:background="@color/overlayBackground"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_alignParentBottom="true"
+            android:paddingEnd="20dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100tk"/>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
