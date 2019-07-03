@@ -26,24 +26,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Verification" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".AboutusActivity" />
-        <activity android:name=".VegActivity" />
-        <activity android:name=".VortaActivity" />
         <activity android:name=".DetailVegActivity" />
         <activity android:name=".CartActivity" />
         <activity android:name=".DetailVortaActivity" />
         <activity android:name=".DetailRiceActivity" />
-        <activity android:name=".RiceActivity" />
-        <activity android:name=".OthersActivity" />
         <activity android:name=".DetailOthersActivity" />
 
         <meta-data
