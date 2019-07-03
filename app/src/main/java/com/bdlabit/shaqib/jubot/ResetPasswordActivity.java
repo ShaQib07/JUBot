@@ -73,7 +73,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
                                             Common.currentUser.getEmail());
                                     Common.currentUser = overWriteUser;
                                     table_user.child(phoneNumber).setValue(overWriteUser);
-                                    Intent intent = new Intent(ResetPasswordActivity.this, HomeActivity.class);
+                                    Intent intent = new Intent(ResetPasswordActivity.this, TabActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
                                     startActivity(intent);

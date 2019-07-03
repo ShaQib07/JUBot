@@ -21,7 +21,7 @@ android {
         applicationId "com.bdlabit.shaqib.jubot"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 14
+        versionCode 15
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

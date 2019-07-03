@@ -3,7 +3,7 @@
     <string name="app">Application</string>
     <string name="version">Version</string>
     <string name="version_no">2.0</string>
-    <string name="version_code">14</string>
+    <string name="version_code">15</string>
     <string name="terms">Terms and Conditions</string>
     <string name="author">Author</string>
     <string name="author_name">Golam Shakib Khan</string>
@@ -79,5 +79,13 @@
         \t৫. রেফারেন্সে আপনার মোবাইল নাম্বার(যে নাম্বার দিয়ে অর্ডার করেছেন),তা প্রদান করুন।\n
         \t৬. আপনার পিন নাম্বার দিয়ে অর্ডার সম্পন্ন করুন।\n
         \t৭. ভবিষ্যতে ব্যবহারের জন্য ফিরতি এসএমএসটি সংরক্ষণ করুন।</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 
 </resources>

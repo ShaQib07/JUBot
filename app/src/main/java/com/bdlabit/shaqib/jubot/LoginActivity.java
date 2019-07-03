@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
                                     Common.currentUser = user;
                                     if (pass.equals(user.getPassword()) ){
                                         Paper.book().write(Common.phn, number);
-                                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                                        startActivity(new Intent(LoginActivity.this, TabActivity.class));
                                         finish();
                                     } else{
                                         Toast.makeText(LoginActivity.this, "Password Incorrect", Toast.LENGTH_SHORT).show();

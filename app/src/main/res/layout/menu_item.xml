@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="7dp"
-    app:cardBackgroundColor="#FFFAE3"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp"
     android:foreground="?android:attr/selectableItemBackground"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp">
+    android:layout_marginBottom="6dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"

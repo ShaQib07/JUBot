@@ -61,7 +61,7 @@ public class SplashScreen extends AppCompatActivity {
                         user.setPhone(phone);
                         Common.currentUser = user;
 
-                        startActivity(new Intent(SplashScreen.this, HomeActivity.class));
+                        startActivity(new Intent(SplashScreen.this, TabActivity.class));
                         finish();
                     }
                 }

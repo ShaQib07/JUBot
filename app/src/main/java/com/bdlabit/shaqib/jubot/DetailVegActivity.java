@@ -63,14 +63,10 @@ public class DetailVegActivity extends AppCompatActivity {
         btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //12 < t && t < 15
-                //19 < t && t < 23
-                if (11 < t && t < 14){
-                    Toast.makeText(DetailVegActivity.this, "Service not available at this moment.\nOur next service will start from 02:00 PM", Toast.LENGTH_LONG).show();
-                } else if (16 < t && t < 19){
-                    Toast.makeText(DetailVegActivity.this, "Service not available at this moment.\nOur next service will start 07:00 PM", Toast.LENGTH_LONG).show();
-                } else if (21 < t || t < 3){
-                    Toast.makeText(DetailVegActivity.this, "Service not available at this moment.\nOur next service will start 03:00 AM", Toast.LENGTH_LONG).show();
+                if (12 < t && t < 15){
+                    Toast.makeText(DetailVegActivity.this, "Service not available at this moment.\nOur next service will start from 03:00 PM", Toast.LENGTH_LONG).show();
+                } else if (19 < t && t < 23){
+                    Toast.makeText(DetailVegActivity.this, "Service not available at this moment.\nOur next service will start 11:00 PM", Toast.LENGTH_LONG).show();
                 } else{
                     boolean check = cartDb.checkCart(currentFood.getName());
                     if (check){

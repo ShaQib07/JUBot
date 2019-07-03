@@ -85,7 +85,7 @@ public class Verification extends AppCompatActivity {
                             User user = new User(phonenumber, password);
                             Common.currentUser = user;
                             table_user.child(phonenumber).setValue(user);
-                            Intent intent = new Intent(Verification.this, HomeActivity.class);
+                            Intent intent = new Intent(Verification.this, TabActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
                             startActivity(intent);
