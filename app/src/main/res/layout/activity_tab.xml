@@ -59,7 +59,7 @@
             app:elevation="16dp"
             app:pressedTranslationZ="16dp"
             android:src="@drawable/ic_shopping_cart_black_24dp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/colorPrimaryLight" />
 
     </RelativeLayout>
 
