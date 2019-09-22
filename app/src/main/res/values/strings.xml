@@ -88,4 +88,18 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
+    <string name="review">Please provide your valuable feedback and  help us improve our application and service</string>
+    <string name="review_ques_1">1st ques</string>
+    <string name="review_ans_1">1st ans</string>
+    <string name="review_ques_2">2nd ques</string>
+    <string name="review_ans_2">2nd ans</string>
+    <string name="review_ques_3">3rd ques</string>
+    <string name="review_ans_3">3rd ans</string>
+    <string name="review_ques_4">4th ques</string>
+    <string name="review_ans_4">4th ans</string>
+    <string name="review_ques_5">5th ques</string>
+    <string name="review_ans_5">5th ans</string>
+    <string name="submit_review">Submit</string>
+    <string name="cancel_review">Cancel</string>
+
 </resources>

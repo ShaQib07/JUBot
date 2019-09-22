@@ -14,15 +14,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".TabActivity"></activity>
+        <activity
+            android:name=".ReviewActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="MY_INTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabActivity"
+            android:launchMode="singleTop"/>
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".FoodListActivity" />
         <activity android:name=".MyOrdersActivity" />
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".SplashScreen">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

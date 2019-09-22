@@ -1,6 +1,6 @@
 package com.bdlabit.shaqib.jubot.viewHolder;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ContextMenu;
 import android.view.View;
 import android.widget.LinearLayout;

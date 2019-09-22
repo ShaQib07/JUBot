@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp"
+    tools:context=".ReviewActivity">
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/review"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="@string/review_ques_1"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_ans1"
+        android:hint="@string/review_ans_1"
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:maxLength="11"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:text="@string/review_ques_2"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_ans2"
+        android:hint="@string/review_ans_2"
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:maxLength="11"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:text="@string/review_ques_3"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_ans3"
+        android:hint="@string/review_ans_3"
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:maxLength="11"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:text="@string/review_ques_4"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_ans4"
+        android:hint="@string/review_ans_4"
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:maxLength="11"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:text="@string/review_ques_5"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_ans5"
+        android:hint="@string/review_ans_5"
+        android:layout_gravity="center"
+        android:background="@drawable/et_bg"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:maxLength="11"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/cancel_review"
+            android:background="@drawable/button_cancel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/submit_review"
+            android:background="@drawable/button"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

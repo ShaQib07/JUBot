@@ -3,33 +3,41 @@ package com.bdlabit.shaqib.jubot;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
+import androidx.core.view.GravityCompat;
+import androidx.viewpager.widget.ViewPager;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.andremion.counterfab.CounterFab;
 import com.bdlabit.shaqib.jubot.Common.Common;
 import com.bdlabit.shaqib.jubot.Database.Database;
+import com.bdlabit.shaqib.jubot.Model.User;
 import com.bdlabit.shaqib.jubot.viewHolder.ViewPagerAdapter;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
+
+import java.util.Objects;
 
 import io.paperdb.Paper;
 
@@ -91,6 +99,19 @@ public class TabActivity extends AppCompatActivity
 
             }
         });
+
+        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+            @Override
+            public void onComplete(@NonNull Task<InstanceIdResult> task) {
+
+                if (task.isSuccessful()){
+
+                    String token = Objects.requireNonNull(task.getResult()).getToken();
+                    saveToken(token);
+                }
+            }
+        });
+        //getting FCM token
 
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -283,6 +304,29 @@ public class TabActivity extends AppCompatActivity
         alertDialog.show();
 
 
+    }
+
+    private void saveToken(String token) {
+
+        User user = new User(Common.currentUser.getPhone(),
+                Common.currentUser.getPassword(),
+                Common.currentUser.getName(),
+                Common.currentUser.getDept(),
+                Common.currentUser.getHall(),
+                Common.currentUser.getRoom(),
+                Common.currentUser.getBatch(),
+                Common.currentUser.getEmail(),
+                token);
+        Common.currentUser = user;
+
+        DatabaseReference dbUser = FirebaseDatabase.getInstance().getReference("User");
+
+        dbUser.child(Common.currentUser.getPhone()).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                Toast.makeText(TabActivity.this, "Token saved", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 

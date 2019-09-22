@@ -9,6 +9,7 @@ public class User {
     private String room;
     private String batch;
     private String email;
+    private String token;
 
     public User() { }
 
@@ -36,6 +37,18 @@ public class User {
         this.room = room;
         this.batch = batch;
         this.email = email;
+    }
+
+    public User(String phone, String password, String name, String dept, String hall, String room, String batch, String email, String token) {
+        this.phone = phone;
+        this.password = password;
+        this.name = name;
+        this.dept = dept;
+        this.hall = hall;
+        this.room = room;
+        this.batch = batch;
+        this.email = email;
+        this.token = token;
     }
 
     public void setPhone(String phone) {
@@ -100,5 +113,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
