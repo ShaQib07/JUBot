@@ -31,19 +31,29 @@
         android:textColor="@color/black"
         android:textSize="16sp"/>
 
-    <EditText
-        android:id="@+id/et_ans1"
-        android:hint="@string/review_ans_1"
+    <RadioGroup
+        android:id="@+id/rad_ans1"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:background="@drawable/et_bg"
-        android:singleLine="true"
-        android:imeOptions="actionNext"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:maxLength="11"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"/>
+
+    </RadioGroup>
 
     <TextView
         android:text="@string/review_ques_2"
@@ -57,19 +67,29 @@
         android:textColor="@color/black"
         android:textSize="16sp"/>
 
-    <EditText
-        android:id="@+id/et_ans2"
-        android:hint="@string/review_ans_2"
+    <RadioGroup
+        android:id="@+id/rad_ans2"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:background="@drawable/et_bg"
-        android:singleLine="true"
-        android:imeOptions="actionNext"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:maxLength="11"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"/>
+
+    </RadioGroup>
 
     <TextView
         android:text="@string/review_ques_3"
@@ -83,19 +103,29 @@
         android:textColor="@color/black"
         android:textSize="16sp"/>
 
-    <EditText
-        android:id="@+id/et_ans3"
-        android:hint="@string/review_ans_3"
+    <RadioGroup
+        android:id="@+id/rad_ans3"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:background="@drawable/et_bg"
-        android:singleLine="true"
-        android:imeOptions="actionNext"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:maxLength="11"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"/>
+
+    </RadioGroup>
 
     <TextView
         android:text="@string/review_ques_4"
@@ -109,19 +139,29 @@
         android:textColor="@color/black"
         android:textSize="16sp"/>
 
-    <EditText
-        android:id="@+id/et_ans4"
-        android:hint="@string/review_ans_4"
+    <RadioGroup
+        android:id="@+id/rad_ans4"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:background="@drawable/et_bg"
-        android:singleLine="true"
-        android:imeOptions="actionNext"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:maxLength="11"
         android:layout_width="320dp"
         android:layout_height="40dp"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"/>
+
+    </RadioGroup>
 
     <TextView
         android:text="@string/review_ques_5"
@@ -140,11 +180,8 @@
         android:hint="@string/review_ans_5"
         android:layout_gravity="center"
         android:background="@drawable/et_bg"
-        android:singleLine="true"
-        android:imeOptions="actionDone"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:maxLength="11"
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_margin="8dp" />
